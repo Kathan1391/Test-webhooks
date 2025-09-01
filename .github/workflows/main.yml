@@ -20,7 +20,6 @@ jobs:
           git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}
           git push --force-with-lease origin feature/test:refs/heads/feature/test
 
-jobs:
   auto-pr:
     runs-on: ubuntu-latest
     permissions:
